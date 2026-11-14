@@ -1,0 +1,113 @@
+```html
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web Solutions — demonstração de hospedagem web com Docker e Kubernetes.">
+    <title>Web Solutions | Nginx</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen bg-slate-950 text-slate-100 antialiased">
+    <header class="border-b border-white/10">
+        <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
+            <a href="#" class="text-xl font-bold tracking-tight">
+                Web<span class="text-cyan-400">Solutions</span>
+            </a>
+            <span class="rounded-full border border-cyan-400/30 px-3 py-1 text-xs font-medium text-cyan-300">
+                NGINX SERVER
+            </span>
+        </nav>
+    </header>
+
+    <main>
+        <section class="mx-auto grid max-w-6xl items-center gap-12 px-6 py-24 md:grid-cols-2 md:py-32">
+            <div>
+                <p class="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-cyan-400">
+                    Infraestrutura web
+                </p>
+
+                <h1 class="text-4xl font-bold leading-tight tracking-tight md:text-6xl">
+                    Sua aplicação.
+                    <span class="text-cyan-400">Nossa infraestrutura.</span>
+                </h1>
+
+                <p class="mt-6 max-w-xl leading-7 text-slate-400">
+                    Uma demonstração de hospedagem web utilizando Nginx,
+                    containers Docker e orquestração com Kubernetes.
+                </p>
+
+                <a href="#arquitetura"
+                   class="mt-8 inline-flex rounded-lg bg-cyan-400 px-5 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300">
+                    Conheça a arquitetura
+                </a>
+            </div>
+
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-8 shadow-2xl shadow-cyan-950/30">
+                <div class="mb-6 flex items-center gap-2">
+                    <span class="h-3 w-3 rounded-full bg-red-400"></span>
+                    <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
+                    <span class="h-3 w-3 rounded-full bg-green-400"></span>
+                    <span class="ml-3 text-sm text-slate-500">server-status</span>
+                </div>
+
+                <p class="text-sm text-slate-400">Status do servidor</p>
+                <p class="mt-2 text-3xl font-bold text-emerald-400">Operacional</p>
+
+                <div class="mt-8 space-y-4 text-sm">
+                    <div class="flex justify-between border-b border-white/10 pb-3">
+                        <span class="text-slate-400">Servidor web</span>
+                        <span class="font-medium">Nginx</span>
+                    </div>
+                    <div class="flex justify-between border-b border-white/10 pb-3">
+                        <span class="text-slate-400">Container</span>
+                        <span class="font-medium">Docker</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-slate-400">Orquestração</span>
+                        <span class="font-medium">Kubernetes</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="arquitetura" class="border-t border-white/10 bg-slate-900/60">
+            <div class="mx-auto max-w-6xl px-6 py-16">
+                <h2 class="text-2xl font-bold">Uma infraestrutura, componentes independentes</h2>
+                <p class="mt-4 max-w-2xl leading-7 text-slate-400">
+                    O projeto demonstra como servidores web podem ser empacotados
+                    em containers e disponibilizados por serviços do Kubernetes.
+                </p>
+
+                <div class="mt-8 grid gap-4 md:grid-cols-3">
+                    <article class="rounded-xl border border-white/10 bg-slate-950 p-5">
+                        <h3 class="font-semibold text-cyan-300">Nginx</h3>
+                        <p class="mt-2 text-sm leading-6 text-slate-400">
+                            Servidor responsável por entregar esta página estática.
+                        </p>
+                    </article>
+
+                    <article class="rounded-xl border border-white/10 bg-slate-950 p-5">
+                        <h3 class="font-semibold text-cyan-300">Docker</h3>
+                        <p class="mt-2 text-sm leading-6 text-slate-400">
+                            Empacotamento e execução do servidor em um container.
+                        </p>
+                    </article>
+
+                    <article class="rounded-xl border border-white/10 bg-slate-950 p-5">
+                        <h3 class="font-semibold text-cyan-300">Kubernetes</h3>
+                        <p class="mt-2 text-sm leading-6 text-slate-400">
+                            Gerenciamento e exposição do serviço no cluster.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-white/10 px-6 py-6 text-center text-sm text-slate-500">
+        Web Solutions — Projeto acadêmico de hospedagem web.
+    </footer>
+</body>
+</html>
+```
