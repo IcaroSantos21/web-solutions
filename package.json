@@ -7,7 +7,11 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev:nginx": "npx @tailwindcss/cli -i ./styles/nginx.css -o ./docker/nginx/styles.css --watch",
+    "dev:apache": "npx @tailwindcss/cli -i ./styles/apache.css -o ./docker/apache/styles.css --watch",
+    "build:css": "npm run build:nginx && npm run build:apache",
+    "build:nginx": "npx @tailwindcss/cli -i ./styles/nginx.css -o ./docker/nginx/styles.css",
+    "build:apache": "npx @tailwindcss/cli -i ./styles/apache.css -o ./docker/apache/styles.css"
   },
   "keywords": [],
   "author": "",
