@@ -1,0 +1,19 @@
+apiVersion: traefik.io/v1alpha1
+kind: Middleware
+metadata:
+  name: nginx-strip-prefix
+  namespace: default
+spec:
+  stripPrefix:
+    prefixes:
+      - /nginx
+---
+apiVersion: traefik.io/v1alpha1
+kind: Middleware
+metadata:
+  name: apache-strip-prefix
+  namespace: default
+spec:
+  stripPrefix:
+    prefixes:
+      - /apache
